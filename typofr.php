@@ -2,14 +2,14 @@
 
 /**
  * Plugin Name: TypoFR
- * Description: a plugin for french typography management, powered by JoliTypo
+ * Description: a plugin for French typography management, powered by JoliTypo
  *
- * Plugin URI: https://github.com/borisschapira/typofr
- * Version: 0.11
+ * Plugin URI: https://github.com/fxbenard/typofr
+ * Version: 0.12
  *
- * Author: Boris Schapira
- * Author URI: http://borisschapira.com
- * License: MIT
+ * Author: FX Bénard, Boris Schapira
+ * Author URI: https://fxbenard.com
+ * License: GPL
  * @package typofr
  */
 
@@ -27,9 +27,9 @@ $GLOBALS['typofr'] = new typofr;
  *
  * @package   typofr
  * @link      http://wordpress.org/extend/plugins/typofr/
- * @license   https://raw.githubusercontent.com/borisschapira/typofr/master/LICENSE MIT
- * @author    Boris Schapira <borisschapira@gmail.com>
- * @copyright Boris Schapira, 2014
+ * @license   https://raw.githubusercontent.com/fxbenard/typofr/master/LICENSE GPL
+ * @author    FX Bénard <fxbenard@gmail.com>
+ * @copyright FX Bénard, 2016
  *
  */
 class typofr
