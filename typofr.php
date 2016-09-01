@@ -9,8 +9,11 @@
  *
  * Author: FX Bénard, Boris Schapira
  * Author URI: https://fxbenard.com
- * License: GPL
- * @package typofr
+ * License: GPL2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Domain Path: /languages
+ * Text Domain: typofr
  */
 
 /**
@@ -312,7 +315,7 @@ class typofr
 	protected function load_plugin_textdomain() {
 
 		if ( ! $this->loaded_textdomain ) {
-			load_plugin_textdomain( self::ID, false, self::ID . '/languages' );
+			load_plugin_textdomain( 'typofr', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 			$this->loaded_textdomain = true;
 		}
 	}
