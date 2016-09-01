@@ -8,7 +8,8 @@
         }
     ],
     "require": {
-        "jolicode/jolitypo": "~0.2.0"        
+        "jolicode/jolitypo": "~0.2.0",
+        "org_heigl/hyphenator": "2.0.*"
     },
     "repositories": [
         {
