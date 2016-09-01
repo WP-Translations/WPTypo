@@ -1,11 +1,11 @@
-=== typofr ===
-Contributors: boris.schapira
+=== WPTypo ===
+Contributors: fxbenard, boris.schapira
 Tags: typography
-Tested up to: 4.2.2
-Stable tag: 0.11
-Requires at least: 3.0
-License: MIT
-License URI: https://raw.githubusercontent.com/borisschapira/typofr/master/LICENSE
+Tested up to: 4.6
+Stable tag: 0.12
+Requires at least: 4.0
+License: GPL2
+License URI: https://raw.githubusercontent.com/fxbenard/WPTypo/master/LICENSE
 
 A WordPress plugin for French typography management, powered by the JoliTypo library.
 
@@ -14,31 +14,31 @@ A WordPress plugin for French typography management, powered by the JoliTypo lib
 Don't you ever get tired of your CMS bad management of french typography ?
 Ellipsis, hyphenation, quotes, there are a lot of things that are not well managed by neither the browser, nor WordPress. And on a Responsive Web Design, a bad arrangement of characters can be very ugly.
 
-TypoFR is a WordPress plugin for french typography management, powered by [JoliTypo](https://github.com/jolicode/JoliTypo), that solve all of the microtyphic glitches inside your HTML content.
+WPTypo is a WordPress plugin for French typography management, powered by [JoliTypo](https://github.com/jolicode/JoliTypo), that solve all of the microtyphic glitches inside your HTML content.
 
 == Warnings ==
 
-1. Because of its object-oriented, namespaced code, TypoFR is not available for WordPress blogs running on PHP <= 5.3.2.
-2. TypoFR corrects all of your content just-in-time. Your blog can suffer from degraded performances if you do not use a cache-management plugin, like [W3 Total Cache](https://WordPress.org/plugins/w3-total-cache/ "W3 Total Cache Plugin").
+1. Because of its object-oriented, namespaced code, WPTypo is not available for WordPress sites running on PHP <= 5.3.2.
+2. WPTypo corrects all of your content just-in-time. Your website can suffer from degraded performances if you do not use a cache-management plugin, like [W3 Total Cache](https://WordPress.org/plugins/w3-total-cache/ "W3 Total Cache Plugin").
 
 == Features ==
 
-TypoFR uses JoliTypo for content fixing :
-* Dimension : replaces the letter x between numbers (12 x 123) by a times entity (×, the real math symbol).
-* Ellipsis : replaces the three dot ... by an ellipsis ….
-* FrenchQuotes : converts dumb quotes " " to smart English style quotation marks “ ”.
-* FrenchNoBreakSpace : replaces some classic spaces by non breaking spaces following the French typographic code. No break space are placed before :, thin no break space before ;, ! and ?.
-* Hyphen (automatic hyphenation) : enables word-hyphenation, using the pattern-files from OpenOffice which are based on the pattern-files created for TeX
-* CurlyQuote (Smart Quote) : replace straight quotes ' by curly one's ’.
-* Trademark : handle trade­mark symbol ™, a reg­is­tered trade­mark symbol ®, and a copy­right symbol ©. This fixer replace commonly used approximations: (r), (c) and (TM). A non-breaking space is put between numbers and copyright symbol too.
+WPTypo uses JoliTypo for content fixing:
+* Dimension: replaces the letter x between numbers (12 x 123) by a times entity (×, the real math symbol).
+* Ellipsis: replaces the three dot ... by an ellipsis ….
+* FrenchQuotes: converts dumb quotes " " to smart English style quotation marks “ ”.
+* FrenchNoBreakSpace: replaces some classic spaces by non breaking spaces following the French typographic code. No break space are placed before :, thin no break space before ; ! and ?.
+* Hyphen (automatic hyphenation): enables word-hyphenation, using the pattern-files from OpenOffice which are based on the pattern-files created for TeX
+* CurlyQuote (Smart Quote): replace straight quotes ' by curly one's ’.
+* Trademark: handle trade­mark symbol ™, a reg­is­tered trade­mark symbol ®, and a copy­right symbol ©. This fixer replace commonly used approximations: (r), (c) and (TM). A non-breaking space is put between numbers and copyright symbol too.
 
 More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://github.com/jolicode/JoliTypo).
 
 == Installation ==
 
-1. Copy the `typofr` folder to the `/wp-content/plugins/` directory
+1. Copy the `WPTypo` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go make something fun of your life, you've finished here.
+3. Go make something fun of your life, you've finished here
 
 == Screenshots ==
 
@@ -46,6 +46,10 @@ More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://
 2. What does this plugin ? See an example with screenshot-2.png
 
 == Changelog ==
+
+= 0.12 =
+
+Initial fork of the plugin by fxbenard
 
 = 0.11 =
 
@@ -57,7 +61,7 @@ More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://
 
 = 0.9 =
 
-* Better HTML on the plugin's options page (https://github.com/borisschapira/typofr/issues/7)
+* Better HTML on the plugin's options page (https://github.com/borisschapira/WPTypo/issues/7)
 * Add beta feature (default: off) : meta keywords fixing
 
 = 0.8 =
@@ -75,7 +79,7 @@ More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://
 
 = 0.5 =
 
-* Better UTF8 management (both removing encoding manipulation in TypoFR and improving JoliTypo dependancy). See : https://github.com/jolicode/JoliTypo/issues/7
+* Better UTF8 management (both removing encoding manipulation in WPTypo and improving JoliTypo dependancy). See : https://github.com/jolicode/JoliTypo/issues/7
 
 = 0.4 =
 
