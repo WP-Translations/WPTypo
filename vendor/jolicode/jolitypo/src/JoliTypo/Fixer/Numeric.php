@@ -13,12 +13,15 @@ use JoliTypo\Fixer;
 use JoliTypo\FixerInterface;
 use JoliTypo\StateBag;
 
-class Dash implements FixerInterface
+/**
+ * Add nbsp between numeric and units.
+ */
+class Numeric implements FixerInterface
 {
     public function fix($content, StateBag $stateBag = null)
     {
-        $content = preg_replace('@(?<=[0-9 ]|^)-(?=[0-9 ]|$)@', Fixer::NDASH, $content);
-        $content = preg_replace('@ ?-- ?([^-]|$)@s', Fixer::MDASH.'$1', $content);
+        // Support a wide range of currencies
+        $content = preg_replace('@([\dº])('.Fixer::ALL_SPACES.')+([º°%Ω฿₵¢₡$₫֏€ƒ₲₴₭£₤₺₦₨₱៛₹$₪৳₸₮₩¥\w]{1})@', '$1'.Fixer::NO_BREAK_SPACE.'$3', $content);
 
         return $content;
     }

@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a8eeaf212d5f729f72986c6f0a4aab79",
-    "content-hash": "09cf6a503eff5135f7b641549dc7aa61",
+    "hash": "bf2a92f22223a775a30b7652335902e9",
+    "content-hash": "8c8e2916e5e17feabdb69728548eced2",
     "packages": [
         {
             "name": "jolicode/jolitypo",
-            "version": "v0.2.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jolicode/JoliTypo.git",
-                "reference": "a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7"
+                "reference": "7e5b849b2077ca0124bc51c239bc18c0b187186d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jolicode/JoliTypo/zipball/a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7",
-                "reference": "a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7",
+                "url": "https://api.github.com/repos/jolicode/JoliTypo/zipball/7e5b849b2077ca0124bc51c239bc18c0b187186d",
+                "reference": "7e5b849b2077ca0124bc51c239bc18c0b187186d",
                 "shasum": ""
             },
             "require": {
@@ -30,12 +30,11 @@
             "conflict": {
                 "ext-apc": "3.1.11"
             },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.11",
+                "phpunit/phpunit": "@stable"
             },
+            "type": "library",
             "autoload": {
                 "psr-0": {
                     "JoliTypo": "src/"
@@ -61,10 +60,10 @@
                 "typography"
             ],
             "support": {
-                "source": "https://github.com/jolicode/JoliTypo/tree/v0.2.0",
+                "source": "https://github.com/jolicode/JoliTypo/tree/1.0.1",
                 "issues": "https://github.com/jolicode/JoliTypo/issues"
             },
-            "time": "2015-07-13 15:05:16"
+            "time": "2016-05-25 22:26:45"
         },
         {
             "name": "org_heigl/hyphenator",

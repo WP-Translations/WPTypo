@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * This file is part of JoliTypo - a project by JoliCode.
+ *
+ * This software consists of voluntary contributions made by many individuals
+ * and is licensed under the MIT license.
+ */
+
 namespace JoliTypo\Fixer;
 
 use JoliTypo\Fixer;
@@ -18,14 +25,13 @@ class Hyphen implements FixerInterface, LocaleAwareFixerInterface
     /**
      * @var array
      */
-    private $supported_locales = array(
-        "af_ZA", "ca", "da_DK", "de_AT", "de_CH", "de_DE", "en_GB", "en_UK", "et_EE", "fr", "hr_HR", "hu_HU", "it_IT", "lt_LT", "nb_NO", "nn_NO", "nl_NL", "pl_PL", "pt_BR", "ro_RO", "ru_RU", "sk_SK", "sl_SI", "sr", "zu_ZA"
+    private $supportedLocales = array(
+        'af_ZA', 'ca', 'da_DK', 'de_AT', 'de_CH', 'de_DE', 'en_GB', 'en_UK', 'et_EE', 'fr', 'hr_HR', 'hu_HU', 'it_IT', 'lt_LT', 'nb_NO', 'nn_NO', 'nl_NL', 'pl_PL', 'pt_BR', 'ro_RO', 'ru_RU', 'sk_SK', 'sl_SI', 'sr', 'zu_ZA',
     );
 
     public function __construct($locale)
     {
-        $this->hyphenator = Hyphenator::factory(null, $this->fixLocale($locale));
-        $this->setOptions();
+        $this->setLocale($locale);
     }
 
     /**
@@ -44,25 +50,26 @@ class Hyphen implements FixerInterface, LocaleAwareFixerInterface
         $this->hyphenator->getOptions()->setRightMin(3);
     }
 
-    public function fix($content, StateBag $state_bag = null)
+    public function fix($content, StateBag $stateBag = null)
     {
         return $this->hyphenator->hyphenate($content);
     }
 
     /**
-     * Transform fr_FR to fr to fit the list of supported locales
+     * Transform fr_FR to fr to fit the list of supported locales.
      *
      * @param $locale
+     *
      * @return mixed
      */
     protected function fixLocale($locale)
     {
-        if (in_array($locale, $this->supported_locales)) {
+        if (in_array($locale, $this->supportedLocales)) {
             return $locale;
         }
 
         if (($short = Fixer::getLanguageFromLocale($locale)) !== $locale) {
-            if (in_array($short, $this->supported_locales)) {
+            if (in_array($short, $this->supportedLocales)) {
                 return $short;
             }
         }

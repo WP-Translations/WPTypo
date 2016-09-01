@@ -9,7 +9,7 @@
 
 namespace JoliTypo\Exception;
 
-class InvalidMarkupException extends \DOMException
+class BadFixerConfigurationException extends \Exception
 {
-    protected $message = 'An error happened when trying to read your HTML with \\DOMDocument.';
+    protected $message = 'Fixer needs configuration.';
 }

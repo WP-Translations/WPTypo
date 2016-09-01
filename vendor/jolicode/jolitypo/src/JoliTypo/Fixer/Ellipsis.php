@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * This file is part of JoliTypo - a project by JoliCode.
+ *
+ * This software consists of voluntary contributions made by many individuals
+ * and is licensed under the MIT license.
+ */
+
 namespace JoliTypo\Fixer;
 
 use JoliTypo\Fixer;
@@ -8,7 +15,7 @@ use JoliTypo\StateBag;
 
 class Ellipsis implements FixerInterface
 {
-    public function fix($content, StateBag $state_bag = null)
+    public function fix($content, StateBag $stateBag = null)
     {
         $content = preg_replace('@\.{3,}@', Fixer::ELLIPSIS, $content);
 

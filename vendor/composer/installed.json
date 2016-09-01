@@ -49,17 +49,17 @@
     },
     {
         "name": "jolicode/jolitypo",
-        "version": "v0.2.0",
-        "version_normalized": "0.2.0.0",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/jolicode/JoliTypo.git",
-            "reference": "a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7"
+            "reference": "7e5b849b2077ca0124bc51c239bc18c0b187186d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/jolicode/JoliTypo/zipball/a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7",
-            "reference": "a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7",
+            "url": "https://api.github.com/repos/jolicode/JoliTypo/zipball/7e5b849b2077ca0124bc51c239bc18c0b187186d",
+            "reference": "7e5b849b2077ca0124bc51c239bc18c0b187186d",
             "shasum": ""
         },
         "require": {
@@ -71,13 +71,12 @@
         "conflict": {
             "ext-apc": "3.1.11"
         },
-        "time": "2015-07-13 15:05:16",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "0.1.x-dev"
-            }
+        "require-dev": {
+            "fabpot/php-cs-fixer": "^1.11",
+            "phpunit/phpunit": "@stable"
         },
+        "time": "2016-05-25 22:26:45",
+        "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-0": {
@@ -104,7 +103,7 @@
             "typography"
         ],
         "support": {
-            "source": "https://github.com/jolicode/JoliTypo/tree/v0.2.0",
+            "source": "https://github.com/jolicode/JoliTypo/tree/1.0.1",
             "issues": "https://github.com/jolicode/JoliTypo/issues"
         }
     }

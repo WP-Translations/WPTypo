@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * This file is part of JoliTypo - a project by JoliCode.
+ *
+ * This software consists of voluntary contributions made by many individuals
+ * and is licensed under the MIT license.
+ */
+
 namespace JoliTypo\Fixer;
 
 use JoliTypo\Fixer;
@@ -8,9 +15,9 @@ use JoliTypo\StateBag;
 
 class Dimension implements FixerInterface
 {
-    public function fix($content, StateBag $state_bag = null)
+    public function fix($content, StateBag $stateBag = null)
     {
-        $content = preg_replace('@(\d+["\']?)( ?)x\\2(?=\d)@', '$1$2'.Fixer::TIMES.'$2', $content);
+        $content = preg_replace('@(\d+["\']?)('.Fixer::ALL_SPACES.')?x('.Fixer::ALL_SPACES.')?(?=\d)@', '$1$2'.Fixer::TIMES.'$2', $content);
 
         return $content;
     }

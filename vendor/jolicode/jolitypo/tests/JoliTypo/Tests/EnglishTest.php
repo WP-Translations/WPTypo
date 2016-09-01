@@ -1,11 +1,19 @@
 <?php
+
+/*
+ * This file is part of JoliTypo - a project by JoliCode.
+ *
+ * This software consists of voluntary contributions made by many individuals
+ * and is licensed under the MIT license.
+ */
+
 namespace JoliTypo\Tests;
 
 use JoliTypo\Fixer;
 
 class EnglishTest extends \PHPUnit_Framework_TestCase
 {
-    private $en_fixers = array('Ellipsis', 'Dimension', 'Dash', 'EnglishQuotes', 'CurlyQuote', 'Hyphen', 'Trademark');
+    private $en_fixers = array('Numeric', 'Ellipsis', 'Dimension', 'Dash', 'SmartQuotes', 'CurlyQuote', 'Hyphen', 'Trademark');
 
     const TOFIX = <<<TOFIX
 <!-- From https://en.wikipedia.org/wiki/Gif#Pronunciation -->
@@ -72,7 +80,7 @@ HTML;
     public function testHtmlHeart()
     {
         $fixed = <<<HTML
-<p>We &lt;3 web.</p>
+<p>We &lt;3&nbsp;web.</p>
 HTML;
 
         $to_fix = <<<HTML

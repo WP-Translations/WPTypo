@@ -1,29 +1,21 @@
 <?php
 
+/*
+ * This file is part of JoliTypo - a project by JoliCode.
+ *
+ * This software consists of voluntary contributions made by many individuals
+ * and is licensed under the MIT license.
+ */
+
 namespace JoliTypo\Fixer;
 
-use JoliTypo\Fixer;
-use JoliTypo\FixerInterface;
-use JoliTypo\StateBag;
-
 /**
- * Convert dumb quotes (" ") to smart quotes („ “).
+ * @deprecated Use SmartQuotes, to be removed in 2.0
  */
-class GermanQuotes extends BaseOpenClosePair implements FixerInterface
+class GermanQuotes extends SmartQuotes
 {
-    public function fix($content, StateBag $state_bag = null)
+    public function __construct($locale = null)
     {
-        // Fix complex siblings cases
-        if ($state_bag) {
-            $content = $this->fixViaState($content, $state_bag, 'GermanQuotesOpenSolo',
-                '@(^|\s|\()"([^"]*)$@', '@(^|[^"]+)"@im', Fixer::BDQUO, Fixer::LDQUO);
-        }
-
-        $content = preg_replace(
-                    '@(^|\s|\()"([^"]+)"@im',
-                    "$1".Fixer::BDQUO."$2".Fixer::LDQUO,
-                    $content);
-
-        return $content;
+        parent::__construct('de');
     }
 }
