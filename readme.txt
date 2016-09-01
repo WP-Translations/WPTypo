@@ -7,7 +7,7 @@ Requires at least: 3.0
 License: MIT
 License URI: https://raw.githubusercontent.com/borisschapira/typofr/master/LICENSE
 
-A Wordpress plugin for French typography management, powered by the JoliTypo library.
+A WordPress plugin for French typography management, powered by the JoliTypo library.
 
 == Description ==
 
@@ -19,7 +19,7 @@ TypoFR is a WordPress plugin for french typography management, powered by [JoliT
 == Warnings ==
 
 1. Because of its object-oriented, namespaced code, TypoFR is not available for WordPress blogs running on PHP <= 5.3.2.
-2. TypoFR corrects all of your content just-in-time. Your blog can suffer from degraded performances if you do not use a cache-management plugin, like [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/ "W3 Total Cache Plugin").
+2. TypoFR corrects all of your content just-in-time. Your blog can suffer from degraded performances if you do not use a cache-management plugin, like [W3 Total Cache](https://WordPress.org/plugins/w3-total-cache/ "W3 Total Cache Plugin").
 
 == Features ==
 
@@ -42,7 +42,7 @@ More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://
 
 == Screenshots ==
 
-1. Wordpress admin settings management screenshot-1.png.
+1. WordPress admin settings management screenshot-1.png.
 2. What does this plugin ? See an example with screenshot-2.png
 
 == Changelog ==
@@ -99,4 +99,4 @@ More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://
 == Thanks ==
 
 * https://github.com/damienalexandre, lead developer of the JoliTypo library
-* https://github.com/darklg for its wordpress skills and input
+* https://github.com/darklg for its WordPress skills and input
