@@ -1,0 +1,111 @@
+[
+    {
+        "name": "org_heigl/hyphenator",
+        "version": "v2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/heiglandreas/Org_Heigl_Hyphenator.git",
+            "reference": "a1ae60d7019f6c927290b8bf3922283f7e8973a4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/heiglandreas/Org_Heigl_Hyphenator/zipball/a1ae60d7019f6c927290b8bf3922283f7e8973a4",
+            "reference": "a1ae60d7019f6c927290b8bf3922283f7e8973a4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "dev-master"
+        },
+        "time": "2016-08-22 18:14:32",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Org\\Heigl\\Hyphenator": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andreas Heigl",
+                "email": "andreas@heigl.org",
+                "homepage": "http://andreas.heigl.org",
+                "role": "Developer"
+            }
+        ],
+        "description": "Word-Hyphenation for PHP",
+        "homepage": "http://github.com/heiglandreas/Org_Heigl_Hyphenator",
+        "keywords": [
+            "hyphenate",
+            "hyphenation"
+        ]
+    },
+    {
+        "name": "jolicode/jolitypo",
+        "version": "v0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jolicode/JoliTypo.git",
+            "reference": "a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jolicode/JoliTypo/zipball/a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7",
+            "reference": "a6bd9bb3b1fecb0ab7662d86d666f88c7e5e2ba7",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "lib-libxml": "*",
+            "org_heigl/hyphenator": "~2.0.3",
+            "php": ">=5.3.0"
+        },
+        "conflict": {
+            "ext-apc": "3.1.11"
+        },
+        "time": "2015-07-13 15:05:16",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "JoliTypo": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Damien Alexandre",
+                "email": "dalexandre@jolicode.com",
+                "homepage": "http://damienalexandre.fr/"
+            }
+        ],
+        "description": "Microtypography fixer for the web.",
+        "homepage": "https://github.com/jolicode/JoliTypo",
+        "keywords": [
+            "ellipsis",
+            "fixer",
+            "quote",
+            "smartquote",
+            "typography"
+        ],
+        "support": {
+            "source": "https://github.com/jolicode/JoliTypo/tree/v0.2.0",
+            "issues": "https://github.com/jolicode/JoliTypo/issues"
+        }
+    }
+]
