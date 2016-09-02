@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPTypo\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/typofr\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wptypo\n"
 "POT-Creation-Date: 2016-09-02 03:05+0200\n"
 "PO-Revision-Date: 2016-09-02 03:07+0200\n"
 "Last-Translator: FX Bénard <fx@fxbenard.com>\n"
