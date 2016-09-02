@@ -2,16 +2,16 @@
 
 /**
  * The user interface and activation/deactivation methods for administering
- * the TypoFR plugin
+ * the WPTypo plugin
  *
- * @package   typofr
- * @link      http://wordpress.org/extend/plugins/typofr/
- * @license   https://raw.githubusercontent.com/borisschapira/typofr/master/LICENSE MIT
- * @author    Boris Schapira <borisschapira@gmail.com>
- * @copyright Boris Schapira, 2014
+ * @package   wptypo
+ * @link      http://wordpress.org/extend/plugins/wptypo/
+ * @license   https://raw.githubusercontent.com/fxbenard/WPTypo/master/LICENSE GPL
+ * @author    FX Bénard <fxbenard@gmail.com>
+ * @copyright FX Bénard, 2016
  *
  */
-class typofr_admin extends typofr
+class wptypo_admin extends wptypo
 {
 	/**
 	 * The WP privilege level required to use the admin interface
@@ -55,7 +55,7 @@ class typofr_admin extends typofr
 	 *
 	 * @return void
 	 *
-	 * @uses typofr::initialize()  to set the object's
+	 * @uses wptypo::initialize()  to set the object's
 	 *         properties
 	 * @uses typofr_admin::set_sections()  to populate the
 	 *       $sections property
@@ -69,7 +69,7 @@ class typofr_admin extends typofr
 		$this->set_fields();
 
 		// Translation already in WP combined with plugin's name.
-		$this->text_settings = sprintf( __( '%s : Settings' ), self::NAME );
+		$this->text_settings = sprintf( __( '%s: Settings' ), self::NAME );
 
 		$this->capability_required = 'manage_options';
 		$this->form_action = 'options.php';
@@ -152,15 +152,15 @@ class typofr_admin extends typofr
 
 		$this->sections = array(
 			'contents' => array(
-				'title' => __( 'Contents fixing', 'typofr' ),
+				'title' => __( 'Contents fixing', 'wptypo' ),
 				'callback' => 'section_blank',
 				),
 			'fixes' => array(
-				'title' => __( 'Fix to apply', 'typofr' ),
+				'title' => __( 'Fix to apply', 'wptypo' ),
 				'callback' => 'section_blank',
 				),
 			'misc' => array(
-				'title' => __( 'Miscellaneous Policies', 'typofr' ),
+				'title' => __( 'Miscellaneous Policies', 'wptypo' ),
 				'callback' => 'section_blank',
 				),
 			);
@@ -196,92 +196,92 @@ class typofr_admin extends typofr
 		$this->fields = array(
 			'deactivate_deletes_data' => array(
 				'section' => 'misc',
-				'label' => __( 'Deactivation', 'typofr' ),
-				'text' => __( "Remove all of the plugin's data and settings at desactivation", 'typofr' ),
+				'label' => __( 'Deactivation', 'wptypo' ),
+				'text' => __( "Remove all of the plugin's data and settings at desactivation", 'wptypo' ),
 				'type' => 'bool',
 				),
 			'debug_in_console' => array(
 				'section' => 'misc',
-				'label' => __( 'Debugging', 'typofr' ),
-				'text' => __( 'Log information into the browser console (display Developper Tools to show the logs)', 'typofr' ),
+				'label' => __( 'Debugging', 'wptypo' ),
+				'text' => __( 'Log information into the browser console (display Developper Tools to show the logs)', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'is_enable_title_fix' => array(
 				'section' => 'contents',
-				'label' => __( 'Titles', 'typofr' ),
-				'text' => __( "Fix all the posts' titles", 'typofr' ),
+				'label' => __( 'Titles', 'wptypo' ),
+				'text' => __( "Fix all the posts' titles", 'wptypo' ),
 				'type' => 'bool',
 				),
 			'is_enable_content_fix' => array(
 				'section' => 'contents',
-				'label' => __( 'Contents', 'typofr' ),
-				'text' => __( "Fix all the posts' contents", 'typofr' ),
+				'label' => __( 'Contents', 'wptypo' ),
+				'text' => __( "Fix all the posts' contents", 'wptypo' ),
 				'type' => 'bool',
 				),
 			'is_enable_excerpt_fix' => array(
 				'section' => 'contents',
-				'label' => __( 'Excerpts', 'typofr' ),
-				'text' => __( "Fix all the posts' excerpts", 'typofr' ),
+				'label' => __( 'Excerpts', 'wptypo' ),
+				'text' => __( "Fix all the posts' excerpts", 'wptypo' ),
 				'type' => 'bool',
 				),
 			'is_enable_comment_fix' => array(
 				'section' => 'contents',
-				'label' => __( 'Comments', 'typofr' ),
-				'text' => __( 'Fix all the comments (content only)', 'typofr' ),
+				'label' => __( 'Comments', 'wptypo' ),
+				'text' => __( 'Fix all the comments (content only)', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'is_enable_meta_fix' => array(
 				'section' => 'contents',
-				'label' => __( 'Meta Datas (Beta)', 'typofr' ),
-				'text' => __( "Fix all the posts' meta datas", 'typofr' ),
+				'label' => __( 'Meta Datas (Beta)', 'wptypo' ),
+				'text' => __( "Fix all the posts' meta datas", 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_ellipsis' => array(
 				'section' => 'fixes',
-				'label' => __( 'Ellipsis', 'typofr' ),
-				'text' => __( 'Replace all occurences of three dots by an ellipsis', 'typofr' ),
+				'label' => __( 'Ellipsis', 'wptypo' ),
+				'text' => __( 'Replace all occurences of three dots by an ellipsis', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_dimension' => array(
 				'section' => 'fixes',
-				'label' => __( 'Dimension', 'typofr' ),
-				'text' => __( 'Detect the letter x between number and replace it by the real math symbol', 'typofr' ),
+				'label' => __( 'Dimension', 'wptypo' ),
+				'text' => __( 'Detect the letter x between number and replace it by the real math symbol', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_dash' => array(
 				'section' => 'fixes',
-				'label' => __( 'Dashes', 'typofr' ),
-				'text' => __( "Replace '-' by ndash '–' (dates ranges) or double-dash -- by a mdash —", 'typofr' ),
+				'label' => __( 'Dashes', 'wptypo' ),
+				'text' => __( "Replace '-' by ndash '–' (dates ranges) or double-dash -- by a mdash —", 'wptypo' ),
 				'type' => 'bool',
 				),
-			'fix_french_quotes' => array(
+			'fix_smart_quotes' => array(
 				'section' => 'fixes',
-				'label' => __( 'French quotes', 'typofr' ),
-				'text' => __( 'Replace dumb quotes " " by smart French style quotation marks « » and use a no break space', 'typofr' ),
+				'label' => __( 'French quotes', 'wptypo' ),
+				'text' => __( 'Replace dumb quotes " " by smart French style quotation marks « » and use a no break space', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_french_no_breakspace' => array(
 				'section' => 'fixes',
-				'label' => __( 'French No Break Space', 'typofr' ),
-				'text' => __( 'Replace some classic spaces by non breaking spaces following the French typographic code', 'typofr' ),
+				'label' => __( 'French No Break Space', 'wptypo' ),
+				'text' => __( 'Replace some classic spaces by non breaking spaces following the French typographic code', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_curly_quote' => array(
 				'section' => 'fixes',
-				'label' => __( 'CurlyQuote', 'typofr' ),
-				'text' => __( "Replace straight quotes ' by curly one's ’", 'typofr' ),
+				'label' => __( 'CurlyQuote', 'wptypo' ),
+				'text' => __( "Replace straight quotes ' by curly one's ’", 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_hyphen' => array(
 				'section' => 'fixes',
-				'label' => __( 'Automatic hyphenation', 'typofr' ),
-				'text' => __( 'Enable word hyphenation', 'typofr' ),
+				'label' => __( 'Automatic hyphenation', 'wptypo' ),
+				'text' => __( 'Enable word hyphenation', 'wptypo' ),
 				'type' => 'bool',
 				),
 			'fix_trademark' => array(
 				'section' => 'fixes',
-				'label' => __( 'Contents', 'typofr' ),
-				'text' => __( 'Replace (r), (c) and (TM) by the right symbols', 'typofr' ),
+				'label' => __( 'Contents', 'wptypo' ),
+				'text' => __( 'Replace (r), (c) and (TM) by the right symbols', 'wptypo' ),
 				'type' => 'bool',
 				),
 			);
@@ -393,7 +393,7 @@ class typofr_admin extends typofr
 	public function section_login() {
 
 		echo '<p>';
-		echo $this->hsc_utf8( __( 'An explanation of this section...', 'typofr' ) );
+		echo $this->hsc_utf8( __( 'An explanation of this section...', 'wptypo' ) );
 		echo '</p>';
 	}
 
@@ -490,7 +490,7 @@ class typofr_admin extends typofr
 		. ' value="' . $this->hsc_utf8( $this->options[ $name ] ) . '" /> ';
 		echo $this->hsc_utf8(
 			$this->fields[ $name ]['text']
-			. ' ' . __( 'Default:', 'typofr' ) . ' '
+			. ' ' . __( 'Default:', 'wptypo' ) . ' '
 			. $this->options_default[ $name ] . '.'
 		);
 	}
@@ -511,7 +511,7 @@ class typofr_admin extends typofr
 		echo '<br />';
 		echo $this->hsc_utf8(
 			$this->fields[ $name ]['text']
-			. ' ' . __( 'Default:', 'typofr' ) . ' '
+			. ' ' . __( 'Default:', 'wptypo' ) . ' '
 			. $this->options_default[ $name ] . '.'
 		);
 	}
@@ -533,14 +533,14 @@ class typofr_admin extends typofr
 			add_settings_error(
 				$this->option_name,
 				$this->hsc_utf8( $this->option_name ),
-				__( 'You need to activate something if you want to use the plugin !', 'typofr' )
+				__( 'You need to activate something if you want to use the plugin!', 'wptypo' )
 			);
 
 			return $out;
 		}
 
-		$gt_format = __( "must be >= '%s',", 'typofr' );
-		$default = __( 'so we used the default value instead.', 'typofr' );
+		$gt_format = __( "must be >= '%s',", 'wptypo' );
+		$default = __( 'so we used the default value instead.', 'wptypo' );
 
 		// Dynamically validate each field using the info in $fields.
 		foreach ( $this->fields as $name => $field ) {
@@ -578,7 +578,7 @@ class typofr_admin extends typofr
 							$this->hsc_utf8( $name ),
 							$this->hsc_utf8(
 								"'" . $field['label'] . "' "
-								. __( 'must be an integer,', 'typofr' )
+								. __( 'must be an integer,', 'wptypo' )
 								. ' ' . $default
 							)
 						);
