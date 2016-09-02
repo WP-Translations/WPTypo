@@ -1,5 +1,5 @@
 === WPTypo ===
-Contributors: fxbenard, boris.schapira
+Contributors: fxbenard
 Tags: typography
 Tested up to: 4.6
 Stable tag: 0.12
@@ -47,9 +47,14 @@ More information on JoliTypo fixers on the [JoliTypo GitHub Repository](https://
 
 == Changelog ==
 
+=0.13 =
+
+* Update JoliTypo version
+* Introduce SmartQuotes
+
 = 0.12 =
 
-Initial fork of the plugin by fxbenard
+Initial fork of the typofr plugin by boris.schapira. Thanks to him for all his work
 
 = 0.11 =
 
@@ -66,7 +71,7 @@ Initial fork of the plugin by fxbenard
 
 = 0.8 =
 
-* Update Jolitypo version
+* Update JoliTypo version
 * Clean some unecessary files
 
 = 0.7 =
@@ -102,5 +107,6 @@ Initial fork of the plugin by fxbenard
 
 == Thanks ==
 
+* https://github.com/borisschapira/typofr, developer of typofr, forked plugin of WPTypo
 * https://github.com/damienalexandre, lead developer of the JoliTypo library
-* https://github.com/darklg for its WordPress skills and input
+* https://github.com/darklg for his WordPress skills and input
