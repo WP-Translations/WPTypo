@@ -1,0 +1,211 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: WPTypo\n"
+"POT-Creation-Date: 2016-09-02 03:05+0200\n"
+"PO-Revision-Date: 2016-09-02 02:37+0200\n"
+"Last-Translator: FX Bénard <fx@fxbenard.com>\n"
+"Language-Team: FX Bénard <fx@fxbenard.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: wptypo.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: admin.php:72
+#, php-format
+msgid "%s: Settings"
+msgstr ""
+
+#: admin.php:155
+msgid "Contents fixing"
+msgstr ""
+
+#: admin.php:159
+msgid "Fix to apply"
+msgstr ""
+
+#: admin.php:163
+msgid "Miscellaneous Policies"
+msgstr ""
+
+#: admin.php:199
+msgid "Deactivation"
+msgstr ""
+
+#: admin.php:200
+msgid "Remove all of the plugin's data and settings at desactivation"
+msgstr ""
+
+#: admin.php:205
+msgid "Debugging"
+msgstr ""
+
+#: admin.php:206
+msgid ""
+"Log information into the browser console (display Developper Tools to show "
+"the logs)"
+msgstr ""
+
+#: admin.php:211
+msgid "Titles"
+msgstr ""
+
+#: admin.php:212
+msgid "Fix all the posts' titles"
+msgstr ""
+
+#: admin.php:217 admin.php:283
+msgid "Contents"
+msgstr ""
+
+#: admin.php:218
+msgid "Fix all the posts' contents"
+msgstr ""
+
+#: admin.php:223
+msgid "Excerpts"
+msgstr ""
+
+#: admin.php:224
+msgid "Fix all the posts' excerpts"
+msgstr ""
+
+#: admin.php:229
+msgid "Comments"
+msgstr ""
+
+#: admin.php:230
+msgid "Fix all the comments (content only)"
+msgstr ""
+
+#: admin.php:235
+msgid "Meta Datas (Beta)"
+msgstr ""
+
+#: admin.php:236
+msgid "Fix all the posts' meta datas"
+msgstr ""
+
+#: admin.php:241
+msgid "Ellipsis"
+msgstr ""
+
+#: admin.php:242
+msgid "Replace all occurences of three dots by an ellipsis"
+msgstr ""
+
+#: admin.php:247
+msgid "Dimension"
+msgstr ""
+
+#: admin.php:248
+msgid ""
+"Detect the letter x between number and replace it by the real math symbol"
+msgstr ""
+
+#: admin.php:253
+msgid "Dashes"
+msgstr ""
+
+#: admin.php:254
+msgid "Replace '-' by ndash '–' (dates ranges) or double-dash -- by a mdash —"
+msgstr ""
+
+#: admin.php:259
+msgid "French quotes"
+msgstr ""
+
+#: admin.php:260
+msgid ""
+"Replace dumb quotes \" \" by smart French style quotation marks « » and use "
+"a no break space"
+msgstr ""
+
+#: admin.php:265
+msgid "French No Break Space"
+msgstr ""
+
+#: admin.php:266
+msgid ""
+"Replace some classic spaces by non breaking spaces following the French "
+"typographic code"
+msgstr ""
+
+#: admin.php:271
+msgid "CurlyQuote"
+msgstr ""
+
+#: admin.php:272
+msgid "Replace straight quotes ' by curly one's ’"
+msgstr ""
+
+#: admin.php:277
+msgid "Automatic hyphenation"
+msgstr ""
+
+#: admin.php:278
+msgid "Enable word hyphenation"
+msgstr ""
+
+#: admin.php:284
+msgid "Replace (r), (c) and (TM) by the right symbols"
+msgstr ""
+
+#: admin.php:305
+msgid "Settings"
+msgstr ""
+
+#: admin.php:396
+msgid "An explanation of this section..."
+msgstr ""
+
+#: admin.php:493 admin.php:514
+msgid "Default:"
+msgstr ""
+
+#: admin.php:536
+msgid "You need to activate something if you want to use the plugin!"
+msgstr ""
+
+#: admin.php:542
+#, php-format
+msgid "must be >= '%s',"
+msgstr ""
+
+#: admin.php:543
+msgid "so we used the default value instead."
+msgstr ""
+
+#: admin.php:581
+msgid "must be an integer,"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WPTypo"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/fxbenard/wptypo"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A plugin for French typography management, powered by JoliTypo"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "FX Bénard"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://fxbenard.com"
+msgstr ""
