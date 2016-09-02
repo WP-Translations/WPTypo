@@ -69,7 +69,7 @@ class wptypo_admin extends wptypo
 		$this->set_fields();
 
 		// Translation already in WP combined with plugin's name.
-		$this->text_settings = sprintf( __( '%s: Settings' ), wptypo );
+		$this->text_settings = sprintf( __( '%s: Settings', 'wptypo' ), self::NAME );
 
 		$this->capability_required = 'manage_options';
 		$this->form_action = 'options.php';
