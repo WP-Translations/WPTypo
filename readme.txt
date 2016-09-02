@@ -1,5 +1,5 @@
 === WPTypo ===
-Contributors: fxbenard
+Contributors: fxbenard, G3ronimo
 Tags: typography
 Tested up to: 4.6
 Stable tag: 0.12
@@ -11,7 +11,7 @@ A WordPress plugin for French typography management, powered by the JoliTypo lib
 
 == Description ==
 
-Don't you ever get tired of your CMS bad management of french typography ?
+Don't you ever get tired of your CMS bad management of French typography?
 Ellipsis, hyphenation, quotes, there are a lot of things that are not well managed by neither the browser, nor WordPress. And on a Responsive Web Design, a bad arrangement of characters can be very ugly.
 
 WPTypo is a WordPress plugin for French typography management, powered by [JoliTypo](https://github.com/jolicode/JoliTypo), that solve all of the microtyphic glitches inside your HTML content.
