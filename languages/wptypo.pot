@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WPTypo\n"
-"POT-Creation-Date: 2016-09-02 03:05+0200\n"
+"POT-Creation-Date: 2016-09-02 09:05+0200\n"
 "PO-Revision-Date: 2016-09-02 02:37+0200\n"
 "Last-Translator: FX Bénard <fx@fxbenard.com>\n"
 "Language-Team: FX Bénard <fx@fxbenard.com>\n"
@@ -195,7 +195,7 @@ msgid "WPTypo"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/fxbenard/wptypo"
+msgid "https://github.com/WP-Translations/wptypo"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -203,9 +203,9 @@ msgid "A plugin for French typography management, powered by JoliTypo"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "FX Bénard"
+msgid "WP-Translations"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://fxbenard.com"
+msgid "http://wp-translations.com"
 msgstr ""
