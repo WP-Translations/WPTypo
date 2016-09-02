@@ -4,11 +4,12 @@
  * Plugin Name: WPTypo
  * Description: A plugin for French typography management, powered by JoliTypo
  *
- * Plugin URI: https://github.com/fxbenard/wptypo
+ * Plugin URI: https://github.com/WP-Translations/wptypo
  * Version: 0.12
  *
- * Author: FX Bénard
- * Author URI: https://fxbenard.com
+ * Author: WP-Translations
+ * Contributors: fxbenard, G3ronimo
+ * Author URI: http://wp-translations.com
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  *
@@ -135,7 +136,7 @@ class wptypo
 
 			$admin_menu = 'admin_menu';
 			$admin_notices = 'admin_notices';
-			$plugin_action_links = 'plugin_action_links_typofr/wptypo.php';
+			$plugin_action_links = 'plugin_action_links_wptypo/wptypo.php';
 
 			add_action( $admin_menu, array( &$admin, 'admin_menu' ) );
 			add_action( 'admin_init', array( &$admin, 'admin_init' ) );

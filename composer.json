@@ -1,10 +1,10 @@
 {
-    "name": "borisschapira/typofr",
-    "description": "a plugin for french typography management, powered by JoliTypo",
+    "name": "wp-translations/wptypo",
+    "description": "A plugin for French typography management, powered by JoliTypo",
     "authors": [
         {
-            "name": "Boris",
-            "email": "bschapira@clever-age.com"
+            "name": "WP-Translations",
+            "email": "contact@wp-translations.com"
         }
     ],
     "require": {

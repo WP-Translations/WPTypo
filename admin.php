@@ -7,8 +7,8 @@
  * @package   wptypo
  * @link      http://wordpress.org/extend/plugins/wptypo/
  * @license   https://raw.githubusercontent.com/fxbenard/WPTypo/master/LICENSE GPL
- * @author    FX Bénard <fxbenard@gmail.com>
- * @copyright FX Bénard, 2016
+ * @author    WP-Translations <contact@wp-translations.com>
+ * @copyright WP-Translations, 2016
  *
  */
 class wptypo_admin extends wptypo
@@ -57,9 +57,9 @@ class wptypo_admin extends wptypo
 	 *
 	 * @uses wptypo::initialize()  to set the object's
 	 *         properties
-	 * @uses typofr_admin::set_sections()  to populate the
+	 * @uses wptypo_admin::set_sections()  to populate the
 	 *       $sections property
-	 * @uses typofr_admin::set_fields()  to populate the
+	 * @uses wptypo_admin::set_fields()  to populate the
 	 *       $fields property
 	 */
 	public function __construct() {
@@ -69,7 +69,7 @@ class wptypo_admin extends wptypo
 		$this->set_fields();
 
 		// Translation already in WP combined with plugin's name.
-		$this->text_settings = sprintf( __( '%s: Settings' ), self::NAME );
+		$this->text_settings = sprintf( __( '%s: Settings' ), wptypo );
 
 		$this->capability_required = 'manage_options';
 		$this->form_action = 'options.php';
@@ -146,7 +146,7 @@ class wptypo_admin extends wptypo
 	 *   method named "section_<sid>()".
 	 *
 	 * @return void
-	 * @uses typofr_admin::$sections  to hold the data
+	 * @uses wptypo_admin::$sections  to hold the data
 	 */
 	protected function set_sections() {
 
@@ -185,11 +185,11 @@ class wptypo_admin extends wptypo
 	 * + bool1:  description for the button indicating the option is on
 	 *
 	 * WARNING:  Make sure to keep this propety and the
-	 * typofr_admin::$options_default
+	 * wptypo_admin::$options_default
 	 * property in sync.
 	 *
 	 * @return void
-	 * @uses typofr_admin::$fields  to hold the data
+	 * @uses wptypo_admin::$fields  to hold the data
 	 */
 	protected function set_fields() {
 
@@ -405,11 +405,11 @@ class wptypo_admin extends wptypo
 	 *
 	 * @return void
 	 *
-	 * @uses typofr_admin::input_int()  for rendering
+	 * @uses wptypo_admin::input_int()  for rendering
 	 *       text input boxes for numbers
-	 * @uses typofr_admin::input_radio()  for rendering
+	 * @uses wptypo_admin::input_radio()  for rendering
 	 *       radio buttons
-	 * @uses typofr_admin::input_string()  for rendering
+	 * @uses wptypo_admin::input_string()  for rendering
 	 *       text input boxes for strings
 	 */
 	public function __call( $name, $params ) {
